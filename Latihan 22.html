@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	Function InputPassword(){
+		coba=1;
+		var Pass do{
+			Pass=prompt('Masukkan password!');
+			if(Pass=="Hanya Aku Yang Tahu"){                
+				alert("Hai..Selamat datang!!");
+				window.open('coba1.htm');
+				break;
+			}else{
+				alert("Password nggak cocok!! Ulangi lagi!!");
+				if (coba==3){
+					alert("Maaf sudah 3x !!");
+					history.go(-1);
+				}
+				coba=coba+1;
+			}
+		} While (coba<=3)
+	}
+</script>
+</html>

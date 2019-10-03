@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+		<input type="number" onchange="Die(this.value);Roll();">
+	<p id="dadu">
+	</p>
+	<script type="text/javascript">
+		function Die(sides) {
+			// body...
+			this.numSides = sides;
+			this.numRolls = 0;
+			this.Roll = Roll;
+		}
+
+		function Roll() {
+			this.numRolls++;
+			return document.getElementById('dadu').innerHTML = Math.floor(Math.random()*this.numSides) + 1;
+		}
+	</script>
+</html>

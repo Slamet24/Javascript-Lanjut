@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<b>Hobi</b>
+		<form>
+			<input type="button" value="polling" onclick="tanya()">
+		</form> 
+</body>
+		<script language="JavaScript">
+			function tanya(){
+				var jawab="";
+				var jawab=prompt("Anda senang bikin hompej?");
+				var JAWAB = jawab.toUpperCase();
+				var tampil="Jawabdong, ya/yup atau tidak/nggak";
+			if ( JAWAB == "YA" || JAWAB == "YUP")
+				{var tampil="Samadong, sayajuga:D"}
+			if(JAWAB== "TIDAK" || JAWAB == "NGGAK")
+				{var tampil="Iya euy, bikin suntuk tuh(_ _)Zz.."}
+				alert(tampil);
+			}
+		</script>
+</html>

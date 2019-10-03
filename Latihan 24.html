@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function cari(){                
+		var kata=document.formcari.keyword.value;
+		{    
+			var hasil= "http://www.google.com/search?q=" + kata; 
+			window.open(hasil,'google',config='height=500 width=750 scrollbars=yes location=yes');
+		}
+	}
+</script>
+<body>
+	<form onsubmit="cari()">
+		<input type="text">
+		<input type="submit" value="Cari!">
+	</form>
+</body>
+</html>
